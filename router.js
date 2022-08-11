@@ -14,6 +14,6 @@ router.route('/entireFlow/:id').get(flowService.getEntireFlow);
 router.route('/getStatus/:id').get(flowService.getStatus);
 
 router.route('/currentStep/:id').get(taskService.getCurrentStepAndTask);
-router.route('/task/:id').put(taskService.updateTask);
+router.route('/task/:id').post(taskService.updateTask);
 
 module.exports = router;
